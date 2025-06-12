@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "installCommand": "npm install",
-  "startCommand": "npm start",
-  "outputDirectory": "server"
+  "startCommand": "node server.js",
+  "outputDirectory": ".",
+  "watchPatterns": ["server/**", "config/**", "middleware/**", "routes/**"]
 }
