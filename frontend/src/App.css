@@ -1,0 +1,175 @@
+/* frontend/src/App.css */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #1976d2; /* MUI primary color */
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.form-control {
+  margin-bottom: 24px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control input[type='text'] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control input[type='text']:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #1565c0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task-list {
+  margin-top: 32px;
+}
+
+.task {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  margin: 12px 0;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task:hover {
+  background: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.task.completed {
+  border-left: 4px solid #4caf50; /* MUI success color */
+  background-color: #f1f8e9; /* Light green background */
+}
+
+.task.completed .task-text {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  min-width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-actions button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #9e9e9e;
+  margin-top: 40px;
+  font-size: 18px;
+  padding: 24px;
+}
+
+/* Material-UI Overrides */
+.MuiButton-root {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.MuiIconButton-root {
+  transition: background-color 0.3s ease !important;
+}
+
+.MuiCheckbox-root {
+  color: #1976d2 !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: #4caf50 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .container {
+    margin: 20px auto;
+    padding: 16px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .task {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .task-actions {
+    align-self: flex-end;
+  }
+}
