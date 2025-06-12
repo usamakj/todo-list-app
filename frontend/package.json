@@ -42,5 +42,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "meta:   title: \"To-Do List Application\"   description: \"A clean and functional full-stack To-Do List App\"   tech_stack:     frontend: \"React.js\"     backend: \"Express.js + MongoDB\"   author:     name: \"Muhammad Usama\"     email: \"usamakj47@gmail.com\"     role: \"Full-Stack Web Developer\"     social: \"🚀 Always exploring and building new things\"",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
